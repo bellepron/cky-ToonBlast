@@ -15,7 +15,6 @@ namespace cky.Managers
         {
             _levelIndex = PlayerPrefs.GetInt(pPrefsLevelIndex);
             levelSettings = levels[_levelIndex % levels.Length];
-            Debug.Log(_levelIndex);
 
             FindObjectOfType<LevelTextController>().UpdateLevelText(_levelIndex);
 
